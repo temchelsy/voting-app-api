@@ -306,7 +306,7 @@ router.post("/:contestId/vote", async (req, res) => {
         !mongoose.Types.ObjectId.isValid(contestantId)) {
       return res.status(400).json({
         success: false,
-        error: "Invalid contest or contestant ID"
+        error: "Invalid contest or contestant id"
       });
     }
 
